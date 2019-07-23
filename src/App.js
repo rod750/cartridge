@@ -6,6 +6,7 @@ import { Section } from 'bloomer';
 import { MenuComponent } from './components/shared/MenuComponent';
 import { PlatformsComponent } from './components/platforms/PlatformsComponent';
 import { DevelopersComponent } from './components/developers/DevelopersComponent';
+import { TagsComponent } from './components/tags/TagsComponent';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/games" component={GamesComponent} />
                     <Route path="/platforms" component={PlatformsComponent} />
                     <Route path="/developers" component={DevelopersComponent} />
+                    <Route path="/tags" component={TagsComponent} />
                 </Section>
             </Router>
         </div>
