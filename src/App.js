@@ -7,6 +7,7 @@ import { MenuComponent } from './components/shared/MenuComponent';
 import { PlatformsComponent } from './components/platforms/PlatformsComponent';
 import { DevelopersComponent } from './components/developers/DevelopersComponent';
 import { TagsComponent } from './components/tags/TagsComponent';
+import { GameDetailComponent } from './components/games/GameDetailComponent';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
                     <Route path="/" exact>
                         <Redirect to="/games" />
                     </Route>
-                    <Route path="/games" component={GamesComponent} />
+                    <Route path="/games" exact component={GamesComponent} />
+                    <Route path="/games/:id" component={GameDetailComponent} />
                     <Route path="/platforms" component={PlatformsComponent} />
                     <Route path="/developers" component={DevelopersComponent} />
                     <Route path="/tags" component={TagsComponent} />
