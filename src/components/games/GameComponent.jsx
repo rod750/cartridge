@@ -11,32 +11,35 @@ import {
     Content,
     Tag
 } from 'bloomer';
+import { Link } from 'react-router-dom';
 
 export class GameComponent extends React.Component {
     render() {
         return (
-            <Card>
-                <CardHeader>
-                    <CardImage>
-                        <Image isRatio='13:18' src={this.props.game.coverUrl} />
-                    </CardImage>
-                </CardHeader>
-                <CardContent>
-                    <Media>
-                        <MediaContent>
-                            <Title isSize={4}>{this.props.game.name}</Title>
-                        </MediaContent>
-                    </Media>
-                    <Content>
-                        {this.props.game.description}
-                    </Content>
-                    <Content>
-                        {(this.props.game.tags.map((tag) => {
-                            return <Tag className="is-dark">{tag.name}</Tag>;
-                        }))}
-                    </Content>
-                </CardContent>
-            </Card>
+            <Link to={"/games/"+this.props.game.id}>
+                <Card>
+                    <CardHeader>
+                        <CardImage>
+                            <Image isRatio='13:18' src={this.props.game.coverUrl} />
+                        </CardImage>
+                    </CardHeader>
+                    <CardContent>
+                        <Media>
+                            <MediaContent>
+                                <Title isSize={4}>{this.props.game.name}</Title>
+                            </MediaContent>
+                        </Media>
+                        <Content>
+                            {this.props.game.description}
+                        </Content>
+                        <Content>
+                            {(this.props.game.tags.map((tag) => {
+                                return <Tag className="is-dark">{tag.name}</Tag>;
+                            }))}
+                        </Content>
+                    </CardContent>
+                </Card>
+            </Link>
         );
     }
 }
