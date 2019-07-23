@@ -4,20 +4,22 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 import { GamesComponent } from './components/games/GamesComponent';
 import { Section } from 'bloomer';
 import { MenuComponent } from './components/shared/MenuComponent';
+import { PlatformsComponent } from './components/platforms/PlatformsComponent';
 
 
 function App() {
     return (
-        <div class="app">
-            <MenuComponent />
-            <Section>
-                <Router>
+        <div className="app">
+            <Router>
+                <MenuComponent />
+                <Section>
                     <Route path="/" exact>
                         <Redirect to="/games" />
                     </Route>
                     <Route path="/games" component={GamesComponent} />
-                </Router>
-            </Section>
+                    <Route path="/platforms" component={PlatformsComponent} />
+                </Section>
+            </Router>
         </div>
     );
 }

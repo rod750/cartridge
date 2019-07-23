@@ -29,10 +29,10 @@ export class GamesComponent extends React.Component {
                         return <Notification><Icon className="mdi mdi-loading spinner" /> Loading</Notification>
                     }
                     if(!data || !data.games) {
-                        return <Notification isColor="dark"><Icon className="mdi mdi-alert" />Ha ocurrido un error, intentalo de nuevo más tarde.</Notification>
+                        return <Notification isColor="dark"><Icon className="mdi mdi-alert" />Uh oh. Something is not working.</Notification>
                     }
                     if(data.games.length === 0){
-                        return <Notification>No has agregado ningún juego.</Notification>
+                        return <Notification>There are no games registered.</Notification>
                     }
 
                     return GameList(data.games);

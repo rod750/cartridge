@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shows empty message 1`] = `
+<div
+  className="notification is-dark"
+>
+  <span
+    className="icon"
+  >
+    <i
+      aria-hidden="true"
+      className="mdi mdi-alert"
+    />
+  </span>
+  Uh oh. Something is not working.
+</div>
+`;
+
+exports[`shows error message 1`] = `
+<div
+  className="notification is-dark"
+>
+  <span
+    className="icon"
+  >
+    <i
+      aria-hidden="true"
+      className="mdi mdi-alert"
+    />
+  </span>
+  Uh oh. Something is not working.
+</div>
+`;
