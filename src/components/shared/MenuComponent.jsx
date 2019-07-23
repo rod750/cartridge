@@ -10,7 +10,7 @@ export class MenuComponent extends React.Component {
                     <NavbarStart>
                         <Link className="navbar-item" to="/games"><Icon className='mdi mdi-gamepad-variant'/> <span>Games</span></Link>
                         <Link className="navbar-item" to="/platforms"><Icon className='mdi mdi-disc-player'/> <span>Platforms</span></Link>
-                        <NavbarItem><Icon className='mdi mdi-code-array'/> <span>Developers</span></NavbarItem>
+                        <Link className="navbar-item" to="/developers"><Icon className='mdi mdi-code-array'/> <span>Developers</span></Link>
                         <NavbarItem><Icon className='mdi mdi-tag'/> <span>Tags</span></NavbarItem>
                     </NavbarStart>
                 </NavbarMenu>
