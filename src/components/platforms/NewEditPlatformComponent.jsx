@@ -129,8 +129,6 @@ export class NewEditPlatformComponent extends React.Component {
     }
 
     updateState(cache, { data: { createPlatform } }) {
-        console.log('updateState');
-        console.log(createPlatform);
         const { platforms } = cache.readQuery({ query: GET_PLATFORMS_QUERY });
 
         cache.writeQuery({
