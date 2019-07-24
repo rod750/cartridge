@@ -17,6 +17,10 @@ section {
     margin-top: 20px;
 }
 
+nav.is-transparent {
+    background-color: transparent;
+}
+
 @keyframes spin {
     from {
         transform:rotate(0deg);
