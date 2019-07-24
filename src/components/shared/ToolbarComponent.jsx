@@ -4,7 +4,7 @@ import { Navbar, NavbarMenu, Icon, NavbarEnd, NavbarItem, Field, Control, Button
 export class ToolbarComponent extends React.Component {
     render() {
         return (
-            <Navbar>
+            <Navbar isTransparent={true}>
                 <NavbarMenu>
                     <NavbarEnd>
                         <NavbarItem className="is-paddingless">
