@@ -15,7 +15,7 @@ import { configStore } from './store/configStore';
 const cache = new InMemoryCache();
 
 const httpLink = new HttpLink({
-    uri: 'http://localhost:8080/graphql'
+    uri: process.env.REACT_APP_API_URL
 });
 
 const client = new ApolloClient({
