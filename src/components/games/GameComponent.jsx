@@ -3,7 +3,6 @@ import {
     Card,
     CardImage,
     Image,
-    CardHeader,
     CardContent,
     MediaContent,
     Media,
@@ -18,11 +17,9 @@ export class GameComponent extends React.Component {
         return (
             <Link to={"/games/"+this.props.game.id}>
                 <Card>
-                    <CardHeader>
-                        <CardImage>
-                            <Image isRatio='13:18' src={this.props.game.coverUrl} />
-                        </CardImage>
-                    </CardHeader>
+                    <CardImage>
+                        <Image isRatio="2:3" src={this.props.game.coverUrl} />
+                    </CardImage>
                     <CardContent>
                         <Media>
                             <MediaContent>
