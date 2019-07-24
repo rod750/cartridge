@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bulma/css/bulma.css';
 import '@mdi/font/css/materialdesignicons.css';
+import 'bulma-modal-fx/dist/css/modal-fx.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ApolloClient } from 'apollo-client';
